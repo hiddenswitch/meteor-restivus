@@ -35,6 +35,6 @@ Package.onTest(function (api) {
   api.use('coffeescript');
   api.use('peterellisjones:describe');
 
-  api.addFiles('test/route_tests.coffee', 'server');
   api.addFiles('test/api_tests.coffee', 'server');
+  api.addFiles('test/route_unit_tests.coffee', 'server');
 });
