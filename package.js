@@ -33,7 +33,7 @@ Package.onTest(function (api) {
   api.use('nimble:restivus');
   api.use('http');
   api.use('coffeescript');
-  api.use('peterellisjones:describe');
+  api.use('practicalmeteor:munit');
 
   api.addFiles('test/api_tests.coffee', 'server');
   api.addFiles('test/route_unit_tests.coffee', 'server');
