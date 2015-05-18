@@ -35,6 +35,12 @@ class @Restivus
 
     # Configure API with the given options
     _.extend @config, config
+    
+    # Configure iron:router form encoding bug
+    # http://stackoverflow.com/questions/26743323/meteor-iron-router-how-to-get-post-data
+    Router.onBeforeAction(Iron.Router.bodyParser.urlencoded({
+      extended: false
+    }));
 
     # Set default header to enable CORS if configured
     if @config.enableCors
