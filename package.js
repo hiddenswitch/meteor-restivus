@@ -14,6 +14,7 @@ Package.onUse(function (api) {
   api.use('check');
   api.use('coffeescript');
   api.use('underscore');
+  api.use('accounts-password');
   api.use('iron:router@1.0.6');
 
   // Package files
